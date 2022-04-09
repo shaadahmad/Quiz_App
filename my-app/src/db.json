@@ -1,0 +1,95 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "Question": "Q1 - Which of the following is the correct name of React.js?",
+      "a": "React",
+      "b": "React.js",
+      "c": " ReactJS",
+      "d": "All of the above",
+      "ans": "d"
+    },
+    {
+      "id": 2,
+      "Question": "Q2 - Which of the following are the advantages of React.js?",
+      "a": "React.js can increase the application's performance with Virtual DOM.",
+      "b": "React.js is easy to integrate with other frameworks such as Angular, BackboneJS since it is only a view library.",
+      "c": " React.js can render both on client and server side.",
+      "d": "All of the above",
+      "ans": "d"
+    },
+    {
+      "id": 3,
+      "Question": "Q3 - Which of the following is not a disadvantage of React.js? ?",
+      "a": "React.js has only a view layer. We have put your code for Ajax requests, events and so on.",
+      "b": "The library of React.js is pretty large.",
+      "c": " The JSX in React.js makes code easy to read and write.",
+      "d": "The learning curve can be steep in React.js.",
+      "ans": "c"
+    },
+    {
+      "id": 4,
+      "Question": "Q4 - What of the following is used in React.js to increase performance?",
+      "a": "Original DOM",
+      "b": "Virtual DOM",
+      "c": " Both A and B.",
+      "d": "None of the above.",
+      "ans": "b"
+    },
+    {
+      "id": 5,
+      "Question": "Q5 - How many numbers of elements a valid react component can return?",
+      "a": "1",
+      "b": "2",
+      "c": " 3",
+      "d": "4",
+      "ans": "a"
+    }
+  ],
+  "NewUsers": [
+    {
+      "id": 1,
+      "email": "barry@gmail.com",
+      "name": "Allen",
+      "phone": "9874",
+      "password": "1230"
+    },
+    {
+      "email": "nitin@123",
+      "name": "Nitin",
+      "phone": "111",
+      "password": "00",
+      "id": 2
+    },
+    {
+      "email": "shaad@gmail.com",
+      "name": "Ahmad",
+      "phone": "991",
+      "password": "000",
+      "id": 3
+    },
+    {
+      "email": "harshit@gmailcom",
+      "name": "Harshit",
+      "phone": "8445",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "email": "adwait@gmail.com",
+      "name": "Adwait",
+      "phone": "777",
+      "password": "123",
+      "id": 5
+    }
+  ],
+  "selectedAnswers": [
+    {
+      "selectedAns": [
+        "c",
+        "b"
+      ],
+      "id": 1
+    }
+  ]
+}
