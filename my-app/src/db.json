@@ -156,20 +156,6 @@
       "Score": 3,
       "Name": "Adwait",
       "id": 5
-    },
-    {
-      "optionsSelected": [],
-      "Score": 0,
-      "Name": "Allen",
-      "id": 6
-    },
-    {
-      "optionsSelected": [
-        "a"
-      ],
-      "Score": 1,
-      "Name": "Allen",
-      "id": 7
     }
   ]
 }
