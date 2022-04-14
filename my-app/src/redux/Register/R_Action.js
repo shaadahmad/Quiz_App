@@ -75,3 +75,26 @@ export const activeUser = (name) =>
         payload: name
     }
 }
+export const addQuestions = (ques) => {
+
+    return (dispatch) => {
+
+        console.log(ques,"action")
+        dispatch({
+            type: REGISTER_USER_REQUEST
+        })
+        axios.post('http://localhost:3004/questions', ques)
+            .then(response => {
+                console.log(response.data)
+
+
+                // dispatch({
+                //     type: REGISTER_USER_SUCCESS,
+
+                // })
+            }).catch(error => {
+                const errorMsg = error.message
+                dispatch(REGISTERUsersFailure(errorMsg))
+            })
+    }
+}
