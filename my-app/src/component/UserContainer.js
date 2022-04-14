@@ -20,7 +20,6 @@ function UserContainer({ userData, fetchUsers, userAnswer, currentLoginPlayer })
   const [disableSubmit, setDisableSubmit] = useState(false)
   const [disableRadio, setDisableRadio] = useState(false)
 
-  const [currentPlayer, setCurrentPlayer] = useState('')
 
 
   const handleShow = () => setShow(true)
@@ -40,7 +39,7 @@ function UserContainer({ userData, fetchUsers, userAnswer, currentLoginPlayer })
     }
     setS_Ans([...s_answer, answer])
 
-    
+
   }
   const handleNext = () => {
 
@@ -50,7 +49,7 @@ function UserContainer({ userData, fetchUsers, userAnswer, currentLoginPlayer })
 
     setNext(next + 1)
     console.log(next);
-    if(next == userData.length-1) userAnswer({ selectedAns: s_answer })
+    if (next == userData.length - 1) userAnswer({ optionsSelected: s_answer , Score:score , Name: currentLoginPlayer.active})
   }
 
   function handleChange(e) {
@@ -64,11 +63,11 @@ function UserContainer({ userData, fetchUsers, userAnswer, currentLoginPlayer })
   ) : Show ? next < userData.length ? (
 
     <div className='qBackground'>
-      <h2>Quiz </h2>
+      <div className='seven'><h2>Quiz </h2></div>
       <div>
 
         <form className='quizForm'>
-          <p>{userData[next].Question}</p>
+          <p> Q{next+1}: {userData[next].Question}</p>
           <div className='options'>
             <input type="radio" disabled={disableRadio} id="a" name="fav_language" value="a" onChange={(e) => handleChange(e.target.value)} />
             <label for="html">{userData[next].a}</label><br /><br />
@@ -99,9 +98,9 @@ function UserContainer({ userData, fetchUsers, userAnswer, currentLoginPlayer })
       </div>
     </div>
   ) : (
-    <div>
+    <div className='qBackground'>
       <h2>Name : {currentLoginPlayer.active}</h2>
-      
+
       Your Score is {score}
       <p>End of ques</p>
       <Link to='/login'>
